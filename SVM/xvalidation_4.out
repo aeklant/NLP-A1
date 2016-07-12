@@ -1,0 +1,72 @@
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.6875 * (normalized) first_person
+ +       3.9063 * (normalized) second_person
+ +       0.4997 * (normalized) third_person
+ +       0.6923 * (normalized) coord_conj
+ +      -0.9116 * (normalized) past_tense
+ +       0.5212 * (normalized) future_tense
+ +       2.0316 * (normalized) commas
+ +       2.1327 * (normalized) colons
+ +       1.8603 * (normalized) dashes
+ +       0.4784 * (normalized) parentheses
+ +      -1.1538 * (normalized) ellipses
+ +       1.3559 * (normalized) common_nouns
+ +       1.3057 * (normalized) proper_nouns
+ +      -1.7693 * (normalized) adverbs
+ +      -0.557  * (normalized) wh_words
+ +       0.3062 * (normalized) slang
+ +      -0.9623 * (normalized) all_uppercase
+ +      -1.9865 * (normalized) avg_sentence_length
+ +       8.6488 * (normalized) avg_token_length
+ +      -1.0878 * (normalized) num_sentences
+ -       0.6235
+
+Number of kernel evaluations: 2541989 (63.074% cached)
+
+
+
+Time taken to build model: 1.51 seconds
+Time taken to test model on training data: 0.18 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6192               62.5455 %
+Incorrectly Classified Instances      3708               37.4545 %
+Kappa statistic                          0.2509
+Mean absolute error                      0.3745
+Root mean squared error                  0.612 
+Relative absolute error                 74.9091 %
+Root relative squared error            122.4002 %
+Total Number of Instances             9900     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.661     0.41       0.617     0.661     0.638      0.625    0
+                 0.59      0.339      0.635     0.59      0.612      0.625    4
+Weighted Avg.    0.625     0.375      0.626     0.625     0.625      0.625
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         670               60.8538 %
+Incorrectly Classified Instances       431               39.1462 %
+Kappa statistic                          0.217 
+Mean absolute error                      0.3915
+Root mean squared error                  0.6257
+Relative absolute error                 78.2925 %
+Root relative squared error            125.1339 %
+Total Number of Instances             1101     
+

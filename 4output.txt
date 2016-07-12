@@ -1,0 +1,49 @@
+Calculating accuracy and confidence for: Classifier 500
+        Accuracy:       0.654596100279
+        Confidence when correct:        0.904070316759
+        Confidence when incorrect:      0.862225279982
+********************************************************************************
+
+
+Calculating accuracy and confidence for: Classifier 2500
+        Accuracy:       0.715877437326
+        Confidence when correct:        0.921818623437
+        Confidence when incorrect:      0.869529505268
+********************************************************************************
+
+
+Calculating accuracy and confidence for: Classifier 5000
+        Accuracy:       0.724233983287
+        Confidence when correct:        0.923857378286
+        Confidence when incorrect:      0.868076308387
+********************************************************************************
+
+
+
+
+Discussion:
+****************************************
+The results for classification accuracy range from 65.46% to 72.42%, which is 
+significantly higher than the results we got from the weka classifiers. 
+Furthermore, we can see that there is a significant increase between the 500 
+dataset and the 2500 dataset and only a slight increase between the 2500 and 
+the 5000 dataset which suggests an exponential increase in accuracy wrt the 
+dataset size, although with only three samples, we cannot tell for sure. 
+
+Another interesting observation is that even though the results are better 
+than those of weka, we were expecting an accuracy greater than 80%. We thought 
+this could be due to either a preprocessing error, biased (or insuficient) 
+training data. Given the fact that we ran the tests a few times to account for 
+preprocessing error (i.e. we fixed possible errors in the preprocessing between 
+test runs) and the results were identical so we hypothesize that the results 
+are due to bias in the dataset.
+
+We could also conclude that considering the semming increase in accuracy as the 
+training data grows larger and the apparent issue with the biased dataset, the 
+watson natural language processor uses deep learning techniques to achieve its 
+results. This is of course, conjecture and would need more thorough testing to 
+be confirmed. 
+
+One more thing to note is that there is a clear difference of approximately 5% 
+in confidence when the classifier makes a correct prediction compared to when 
+the prediction is incorrect.

@@ -1,0 +1,230 @@
+Table format:
+precision_class0 recall_class0
+precision_class1 recall_class1
+avg_precision    avg_recall      accuracy
+
+
+
+Decision Trees
+*************************
+500 training set
+0.781	0.79
+0.787	0.778
+0.784	0.784 58.0909%
+
+1000 training set
+0.803	0.776
+0.783	0.81
+0.793	0.793	56.7666 %
+
+1500 training set
+0.798	0.776
+0.782	0.804
+0.79	0.79	56.3124 %
+
+2000 training set
+0.784	0.784
+0.784	0.784
+0.784	0.784	57.3115 %
+
+2500 training set
+0.767	0.786
+0.781	0.761
+0.774 	0.774	57.0391 %
+
+3000 training set
+0.789	0.775
+0.779	0.793
+0.784	0.784	57.1299 %
+
+3500 training set
+0.795	0.775
+0.781	0.801
+0.788	0.788	59.9455 %
+
+4000 training set
+0.786	0.776
+0.779	0.789
+0.783	0.783	55.495  %
+
+4500 training set
+0.796	0.773
+0.78	0.802
+0.788	0.788	56.7666 %
+
+5000 training set
+0.792	0.792
+0.792	0.792
+0.792	0.792	55.9491 %
+
+AVG
+0.7891		0.7803
+0.7828		0.7914
+0.786		0.786		51.27157%
+
+
+
+NB
+*************************
+500 training set
+0.608	0.571
+0.595	0.632
+0.601	0.601	59.7273 %
+
+1000 training set
+0.609	0.581
+0.599	0.627
+0.604	0.604	61.0354 %
+
+1500 training set
+0.608	0.579
+0.598	0.626
+0.603	0.603	59.0372 %
+
+2000 training set
+0.607	0.563 
+0.593	0.636
+0.6 	0.6		56.7666 %
+
+2500 training set
+0.603	0.642
+0.617	0.578
+0.61	0.61	62.1253 %
+
+3000 training set
+0.608	0.588
+0.601	0.622
+0.605	0.605	59.7639 %
+
+3500 training set
+0.605	0.609
+0.606  0.602
+0.606 	0.606 	61.3987 %
+
+4000 training set
+0.605  0.609
+0.606  0.60
+0.606	0.606	60.0363 %
+
+4500 training set
+0.606 	0.567
+0.594	0.632
+0.6		0.6		59.5822 %
+
+5000 training set
+0.603	0.579
+0.595	0.619 
+0.599	0.599	59.7639 %
+
+AVG
+0.6062		0.5888
+0.661		0.6174
+0.6034		0.6034		59.92368 % 
+
+
+SVM
+*************************
+500 training set
+0.619	0.647
+0.63	0.602
+0.625	0.624	62.5455 %
+
+1000 training set
+0.617	0.633 
+0.624	0.608
+0.621	0.621	65.0318 %
+
+1500 training set
+0.62	0.64
+0.628	0.608 
+0.624	0.624	61.8529 %
+
+2000 training set
+0.621	0.643
+0.63	0.607
+0.625	0.625	61.3987 %
+
+2500 training set
+0.617	0.661
+0.635	0.59
+0.626	0.625	60.8538 %
+
+3000 training set
+0.614	0.666
+0.635	0.582
+0.625	0.624	61.8529 %
+
+3500 training set
+0.613	0.664
+0.633	0.58
+0.623	0.622	63.6694 %
+
+4000 training set
+0.614	0.682
+0.642	0.571
+0.628	0.626	60.7629 %
+
+4500 training set
+0.616	0.659
+0.634	0.59
+0.625	0.624	62.4886 %
+
+5000 training set
+0.615	0.666
+0.636	0.583
+0.626	0.625	62.2162 %
+
+AVG
+0.6166		0.6561
+0.6327		0.5921
+0.6248		0.5615		62.26727 %
+
+
+Comparison
+*************************
+
+SVM vs Decision Trees:
+precision_class_0: p_value = 2.80584e-12
+precision_class_4: p_value = 1.63132e-13
+
+recall_class_0: p_value = 2.33721e-09
+recall_class_4: p_value = 7.88830e-11
+
+avg_precision: p_value = 6.16259e-14
+avg_recall:    p_value = 3.90904e-14
+
+accuracy: p_value = 8.16195e-07
+
+SVM vs Naive Bayes
+precision_class_0: p_value = 6.26136e-07
+precision_class_4: p_value = 1.92510e-07
+
+recall_class_0: p_value = 3.81676e-06
+recall_class_4: p_value = 0.000586056
+
+avg_precision: p_value = 2.92046e-08
+avg_recall:    p_value = 4.07720e-08
+
+accuracy: p_value = 0.001506511
+
+Naive Bayes vs Decision Trees
+precision_class_0: p_value = 4.30617e-13
+precision_class_4: p_value = 7.06933e-13
+
+recall_class_0: p_value = 2.01105e-09
+recall_class_4: p_value = 1.08339e-10
+
+avg_precision: p_value = 1.062399e-13
+avg_recall:    p_value = 1.062399e-13
+
+accuracy: p_value = 0.00048853
+
+
+Discussion:
+****************************************
+From our calculations we can observe that the p_values in all of the 
+comparisons are quite small, enough to reject the null hypothesis that the two 
+samples have identical expected values. 
+
+The most similar would be SVM and Naive Bayes with a p_value for accuracy 
+of 0.0015, which is still small enough to reject the null hypothesis.

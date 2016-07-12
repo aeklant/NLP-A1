@@ -1,0 +1,52 @@
+Model: Naive Bayes
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.55 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6953               63.2091 %
+Incorrectly Classified Instances      4047               36.7909 %
+Kappa statistic                          0.2642
+Mean absolute error                      0.4195
+Root mean squared error                  0.4875
+Relative absolute error                 83.8926 %
+Root relative squared error             97.5075 %
+Total Number of Instances            11000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         209               58.2173 %
+Incorrectly Classified Instances       150               41.7827 %
+Kappa statistic                          0.1617
+Mean absolute error                      0.4245
+Root mean squared error                  0.4967
+Relative absolute error                 84.9042 %
+Root relative squared error             99.3471 %
+Total Number of Instances              359     
+
+
+
+
+Discussion
+****************************************
+Given the results from the sentiment analysis we performed in weka, we 
+reached the conclusion that the features we used were not representative enough 
+(or not sufficient) to effectively generalize the predictions. We therefore 
+attempted to make the predictions more robust by adding four more features: 
+positive words, negative words, positive emoticons and negative emoticons.
+The positive and negative words are a subset of words extracted from the nrc 
+emotion lexicon database, while the emoticons are a subjective compilation 
+made by ourselves.
+
+We can observe a significant increase in testing accuracy with the addition of 
+these features, taking our classifier from 53% to 58% accuracy. While this 
+is still far from a state-of-the-art classifier, the increase can only be 
+attributed to the added features. Another thing to note is that we ran tests 
+without the emoticons as features and the results were identical, which 
+suggests (much to our surprise) that the presence of emoticons in a tweet is 
+not a good indicator of sentiment (either that, or there were simply not enough 
+examples with emoticons in the training set for the system to consider them a 
+useful feature). 

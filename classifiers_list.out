@@ -1,0 +1,33 @@
+{
+  "classifiers" : [ {
+    "classifier_id" : "c7e487x21-nlc-526",
+    "url" : "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/c7e487x21-nlc-526",
+    "name" : "Classifier test1",
+    "language" : "en",
+    "created" : "2016-02-11T23:25:53.271Z"
+  }, {
+    "classifier_id" : "c7fa4ax22-nlc-484",
+    "url" : "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/c7fa4ax22-nlc-484",
+    "name" : "Classifier test2",
+    "language" : "en",
+    "created" : "2016-02-11T23:44:15.703Z"
+  }, {
+    "classifier_id" : "c7e487x21-nlc-297",
+    "url" : "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/c7e487x21-nlc-297",
+    "name" : "Classifier 2500",
+    "language" : "en",
+    "created" : "2016-02-11T03:18:13.570Z"
+  }, {
+    "classifier_id" : "c7fa49x23-nlc-222",
+    "url" : "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/c7fa49x23-nlc-222",
+    "name" : "Classifier 500",
+    "language" : "en",
+    "created" : "2016-02-11T01:51:41.378Z"
+  }, {
+    "classifier_id" : "c7fa49x23-nlc-245",
+    "url" : "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/c7fa49x23-nlc-245",
+    "name" : "Classifier 5000",
+    "language" : "en",
+    "created" : "2016-02-11T03:20:24.274Z"
+  } ]
+}
